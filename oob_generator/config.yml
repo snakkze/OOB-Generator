@@ -1,0 +1,79 @@
+export:
+  # OOB year to use in the file name, for example [TAG]_1866.txt
+  oob_year: 1918
+templates:
+  militia:
+    weight: 0.2
+    min_provinces_for_usage: 20
+    start_experience_factor: 0.1
+    name: "Militia-Division"
+    template: |
+      division_template = {
+        name = "Militia-Division"
+        is_locked = no
+
+        regiments = {
+          irregular_infantry = { x = 0 y = 0 }
+          irregular_infantry = { x = 0 y = 1 }
+          irregular_infantry = { x = 1 y = 0 }
+          irregular_infantry = { x = 1 y = 1 }
+        }
+      }
+
+  infantry:
+    weight: 0.7
+    min_provinces_for_usage: 30
+    start_experience_factor: 0.3
+    name: "Infantry-Division"
+    template: |
+      division_template = {
+        name = "Infantry-Division"
+        is_locked = no
+
+        regiments = {
+          infantry = { x = 0 y = 0 }
+          infantry = { x = 0 y = 1 }
+          infantry = { x = 1 y = 0 }
+          infantry = { x = 1 y = 1 }
+        }
+      }
+
+  cavalry:
+    weight: 0.3
+    min_provinces_for_usage: 75
+    start_experience_factor: 0.3
+    name: "Cavalry-Division"
+    template: |
+      division_template = {
+        name = "Cavalry-Division"
+        is_locked = no
+
+        regiments = {
+          cavalry = { x = 0 y = 0 }
+          cavalry = { x = 0 y = 1 }
+          cavalry = { x = 1 y = 0 }
+          cavalry = { x = 1 y = 1 }
+        }
+      }
+
+  artillery:
+    weight: 0.2
+    min_provinces_for_usage: 125
+    start_experience_factor: 0.3
+    name: "Artillery-Division"
+    template: |
+      division_template = {
+        name = "Artillery-Division"
+        is_locked = no
+
+        regiments = {
+          infantry = { x = 0 y = 0 }
+          infantry = { x = 0 y = 1 }
+          infantry = { x = 1 y = 0 }
+          infantry = { x = 1 y = 1 }
+        }
+        support = {
+          artillery = { x = 0 y = 0 }
+        }
+      }
+
