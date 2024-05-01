@@ -11,6 +11,8 @@
 
 **In order to use the Generator properly, your Mod needs to have a full list of States!**
 
+**If you can't run the EXE, disable your Antivirus since Windows Defender and others detect the EXE as a trojan because of the way the Python file gets converted to the EXE. If you dont trust me, look at the source code, it is public!**
+
 ![alt text](https://i.imgur.com/M7gTUdI.png)
 
 **Also, to support this project, please make sure to join my Discord dedicated to the 1870s HOI4 Mod, a mod which revolves around the Victorian Era and the rise of Prussia!**
